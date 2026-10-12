@@ -1,0 +1,80 @@
+1
+¿Qué sucede cuando duplicas la velocidad?
+Va mas rapido.
+
+¿Cambiar la escala modifica la velocidad?
+No.
+
+¿Por qué el objeto puede seguir desplazándose sin tener un Rigidbody2D?
+Por que el objeto está siendo movido por un script que actualiza su posición directamente, un efecto similar puede ser aplicado con transform.position.
+
+¿Qué pasaría si intentaras utilizar este mismo enfoque para simular una pelota que rebota sobre una plataforma?
+La pelota no rebotaría, ya que no habría física involucrada.
+
+2.
+¿Qué sucede cuando aumentas la fuerza del impulso?
+Se aplica una mayor fuerza de empuje.
+
+¿Qué cambia cuando Gravity Scale es igual a cero?
+La gravedad no afecta al objeto.
+
+¿Por qué la pelota cae más rápidamente cuando aumentas la escala de gravedad?
+Porque la fuerza de gravedad es mayor, lo que resulta en una aceleración más rápida.
+
+¿Qué diferencia hay entre mantener una fuerza continua y aplicar un impulso?
+La fuerza continua actúa constantemente sobre el objeto, mientras que un impulso es una fuerza aplicada de forma instantánea.
+
+¿Qué función cumple el Rigidbody2D en esta escena?
+El Rigidbody2D permite que el objeto sea afectado por la física.
+
+3.
+¿Por qué la pelota comienza a moverse horizontalmente?
+Por como funciona linearVelocity, haciendo que se pueda mover en el eje X.
+
+¿Por qué termina cayendo si su velocidad vertical inicial es cero?
+Al tener un rigidbody, la gravedad actúa sobre el objeto, haciendo que su velocidad vertical aumente hacia abajo con el tiempo.
+
+¿Qué diferencia observas entre asignar linearVelocity y aplicar un impulso con AddForce()?
+linearVelocity establece directamente la velocidad del objeto, mientras que AddForce() aplica una fuerza que puede cambiar la velocidad dependiendo de la masa y otras fuerzas actuando sobre el objeto.
+
+¿Qué sucede cuando desactivas la gravedad?
+La pelota no cae, ya que no hay fuerza de gravedad actuando sobre ella.
+
+¿Qué papel desempeñan los colliders?
+Los colliders definen la forma y el tamaño del objeto para los efectos de colisión.
+
+¿Por qué cambiar el material físico puede modificar el rebote?
+Porque el material físico determina las propiedades de fricción y restitución, que afectan cómo se comporta el objeto al chocar con otras superficies.
+
+4.
+
+Prueba	Fuerza de nave	Gravedad de pelota	Resultado observado
+1		4				1					La pelota empuja la nave hacia abajo.
+2		8				1					La nave logra empujar la pelota hacia arriba.
+3		8				2					La nave empuja la pelota hacia arriba pero con mas dificultad.
+
+
+5.
+¿En qué se diferencia Transform.Translate() de Rigidbody2D.AddForce()?
+que Transform.Translate() mueve el objeto directamente sin tener en cuenta la física, mientras que Rigidbody2D.AddForce() aplica una fuerza que interactúa con la física del objeto.
+
+¿Qué diferencia hay entre aplicar un impulso y asignar linearVelocity?
+Un impulso es una fuerza aplicada de forma instantánea, mientras que linearVelocity establece directamente la velocidad del objeto.
+
+¿Qué papel desempeña la gravedad?
+La gravedad es una fuerza que atrae los objetos hacia el centro de la Tierra o en este caso hacia abajo en el eje Y, afectando su movimiento y aceleración.
+
+¿Por qué necesitamos colliders para detectar contactos físicos?
+por que los colliders permiten que los objetos interactúen entre sí y detecten colisiones.
+
+¿Qué propiedad modificaste para mejorar el equilibrio?
+la fuerza aplicada a la nave y la gravedad.
+
+¿Qué problema encontraste durante las pruebas y cómo lo resolviste?
+al no tener Time.DeltaTime, el movimiento de la nave era inconsistente, lo resolví aplicando Time.deltaTime para que el movimiento fuera más uniforme.
+
+Si tuvieras que construir un proyectil, ¿qué técnica elegirías y por qué?
+LinearVelocity, porque permite un control más preciso sobre la velocidad y dirección del proyectil.
+
+¿Qué cambiarías si quisieras una nave que se desplazara de manera más controlada y sin inercia?
+LinearVelocity, ya que permite modificar inmediatamente la velocidad del objeto sin depender de la física.
