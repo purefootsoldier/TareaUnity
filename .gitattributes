@@ -169,3 +169,8 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Fuera de LFS: la cuota de LFS del repositorio está agotada
+Assets/SpaceCrisis/Materials/*.png -filter -diff -merge -text
+Assets/SpaceCrisis/Prefabs/Ship.fbx -filter -diff -merge -text
+Assets/TiberianCrisis/Materials/*.jpg -filter -diff -merge -text
