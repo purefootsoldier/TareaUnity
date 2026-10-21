@@ -8,5 +8,41 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Reto_Final.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Actividad_01.unity
+    guid: 641b77e8a91d9ce469dafe84b0f4bc03
+  - enabled: 1
+    path: Assets/Scenes/Actividad_02.unity
+    guid: 3ecd9d16f862a1a448253993311f45a6
+  - enabled: 1
+    path: Assets/Scenes/Actividad_2.unity
+    guid: 06ed27fd832bc5846a5955b5c8220599
+  - enabled: 1
+    path: Assets/Scenes/Clase04_PlayerReactivo.unity
+    guid: 1991b3ed36774f44a925b962d258f80e
+  - enabled: 1
+    path: Assets/Scenes/Escena01_InputMovement.unity
+    guid: e43c788dfb49a7d42901f70e910a7895
+  - enabled: 1
+    path: Assets/Scenes/Escena01_Transform.unity
+    guid: 81dd9280698c30f42852b7ca97483a9c
+  - enabled: 1
+    path: Assets/Scenes/Escena02_AddForce.unity
+    guid: c5f2e275f4732e748b09e3079a6c915e
+  - enabled: 1
+    path: Assets/Scenes/Escena02_InputPhysics.unity
+    guid: 8d47624619a5d8741ac09006f9db8695
+  - enabled: 1
+    path: Assets/Scenes/Escena03_LinearVelocity.unity
+    guid: 3f66f1e8e7f0dbb469d1fecfc6a364db
+  - enabled: 1
+    path: Assets/Scenes/Reto_Input_Equilibrio.unity
+    guid: 7ed8f060c6af5b042886ebe768230b3d
+  - enabled: 1
+    path: Assets/Scenes/SpaceCrisis/Scenes/SpaceCrisis.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/TiberianCrisis/Scenes/TiberianCrisis.unity
+    guid: 0c56a34dadb2b954d42c64d192f2269e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -171,6 +171,6 @@ Packages/packages-lock.json linguist-generated
 LightingData.asset     binary
 
 # Fuera de LFS: la cuota de LFS del repositorio está agotada
-Assets/SpaceCrisis/Materials/*.png -filter -diff -merge -text
-Assets/SpaceCrisis/Prefabs/Ship.fbx -filter -diff -merge -text
-Assets/TiberianCrisis/Materials/*.jpg -filter -diff -merge -text
+Assets/Scenes/SpaceCrisis/Materials/*.png -filter -diff -merge -text
+Assets/Scenes/SpaceCrisis/Prefabs/Ship.fbx -filter -diff -merge -text
+Assets/Scenes/TiberianCrisis/Materials/*.jpg -filter -diff -merge -text
